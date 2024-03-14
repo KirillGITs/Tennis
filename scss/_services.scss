@@ -1,0 +1,27 @@
+.services {
+  padding-top: 202px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.services-block {
+	display: flex;
+	align-items: center;
+	gap: 50px;
+  background-color: rgb(141, 134, 201);
+  padding: 35px 40px;
+  &__title {
+    padding-bottom: 17px;
+    color: var(--color-white);
+    font-size: 18px;
+    line-height: 140%;
+  }
+  &__descriptions {
+    color: var(--color-white);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%;
+  }
+  &__icon-link {
+  }
+}

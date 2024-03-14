@@ -1,0 +1,54 @@
+.header {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+	padding-bottom: 30px;
+}
+.logo {
+  padding-right: 124px;
+  &__img-logo {
+  }
+}
+.nav {
+  display: flex;
+}
+.list {
+  display: flex;
+  align-items: center;
+  &__ul {
+    display: flex;
+    gap: 40px;
+  }
+  &__list-selection {
+    > a {
+      color: var(--color-white);
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 140%;
+    }
+  }
+}
+.social-media {
+  display: flex;
+  align-items: center;
+  padding-left: 155px;
+  gap: 30px;
+}
+.icon-youtube {
+  cursor: pointer;
+  &:hover {
+    stroke: black;
+    color: black;
+  }
+}
+.icon-vk {
+  cursor: pointer;
+  &:hover {
+    stroke: black;
+    color: black;
+  }
+}
+.border {
+  border: 1px solid #fff;
+  opacity: 0.3;
+}

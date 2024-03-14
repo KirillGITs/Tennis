@@ -1,0 +1,38 @@
+.club-address {
+  padding-top: 200px;
+  padding-left: 312px;
+
+  &__title {
+    > h1 {
+      color: rgb(255, 255, 255);
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 140%;
+      width: 580px;
+      padding-bottom: 60px;
+    }
+  }
+}
+.video {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  &__on {
+    > .icon-video {
+      cursor: pointer;
+      &:hover {
+        stroke: rgb(0, 0, 0);
+      }
+    }
+  }
+  &__description {
+    > p {
+      /* p / 18sb */
+      color: var(--color-white);
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 140%;
+    }
+    width: 173px;
+  }
+}

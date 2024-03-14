@@ -5,38 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Tennis</title>
   </head>
   <body>
     <header class="header">
-      <div class="logo"></div>
+      <div class="logo">
+        <img class="logo__img-logo" src="./images/logo.png" alt="#" />
+      </div>
       <nav class="nav">
         <div class="list">
           <ul class="list__ul">
-            <li class="list__list-selection">Главная</li>
-            <li class="list__list-selection">О клубе</li>
-            <li class="list__list-selection">Турниры</li>
-            <li class="list__list-selection">Услуги</li>
-            <li class="list__list-selection">Детский теннис</li>
-            <li class="list__list-selection">Галерея</li>
-            <li class="list__list-selection">Цены</li>
-            <li class="list__list-selection">Контакты</li>
+            <li class="list__list-selection"><a href="">Главная</a></li>
+            <li class="list__list-selection"><a href="">О клубе</a></li>
+            <li class="list__list-selection"><a href="">Турниры</a></li>
+            <li class="list__list-selection"><a href="">Услуги</a></li>
+            <li class="list__list-selection"><a href="">Детский теннис</a></li>
+            <li class="list__list-selection"><a href="">Галерея</a></li>
+            <li class="list__list-selection"><a href="">Цены</a></li>
+            <li class="list__list-selection"><a href="">Контакты</a></li>
           </ul>
         </div>
         <div class="social-media">
-          <div class="social-media__youtube-icon youtube-icon"></div>
-          <div class="social-media__vc-icon vc-icon"></div>
+          <div class="social-media__icon-youtube">
+            <svg class="icon-youtube" width="36" height="36">
+              <use href="./svg/icons.svg#icon-youtube"></use>
+            </svg>
+          </div>
+          <div class="social-media__icon-vk">
+            <svg class="icon-vk" width="36" height="36">
+              <use href="./svg/icons.svg#icon-vk"></use>
+            </svg>
+          </div>
         </div>
       </nav>
     </header>
+    <div class="border"></div>
     <main>
-      <section class="club-addrres">
-        <div class="club-addrres__title">
-          <h1>Петербургский  теннисный клуб  имени М.А. Пасечникова</h1>
+      <section class="club-address">
+        <div class="club-address__title">
+          <h1>
+            Петербургский теннисный клуб <br />
+            имени М.А.Пасечникова
+          </h1>
         </div>
         <div class="video">
-          <div class="video__on"></div>
+          <div class="video__on">
+            <svg class="icon-video" width="80" height="80">
+              <use href="./svg/icons.svg#icon-video"></use>
+            </svg>
+          </div>
           <div class="video__description">
             <p>Посмотрите видео о нашем клубе</p>
           </div>
@@ -46,38 +64,54 @@
         <article class="services-block">
           <div class="services-block__title">
             <p>Услуги</p>
+            <div class="services-block__descriptions">
+              <h2>Аренда корта</h2>
+            </div>
           </div>
-          <div class="services-block__descriptions">
-            <h2>Аренда корта</h2>
+          <div class="services-block__icon-link">
+            <svg width="30" height="30">
+              <use href="./svg/icons.svg#icon-link"></use>
+            </svg>
           </div>
-          <div class="services-block__move-on"></div>
         </article>
         <article class="services-block">
           <div class="services-block__title">
             <p>Услуги</p>
+            <div class="services-block__descriptions">
+              <h2>Детский теннис</h2>
+            </div>
           </div>
-          <div class="services-block__descriptions">
-            <h2>Детский теннис</h2>
+          <div class="services-block__icon-link">
+            <svg width="30" height="30">
+              <use href="./svg/icons.svg#icon-link"></use>
+            </svg>
           </div>
-          <div class="services-block__move-on"></div>
         </article>
         <article class="services-block">
           <div class="services-block__title">
             <p>Услуги</p>
+            <div class="services-block__descriptions">
+              <h2>Сборы команд</h2>
+            </div>
           </div>
-          <div class="services-block__descriptions">
-            <h2>Сборы команд</h2>
+          <div class="services-block__icon-link">
+            <svg width="30" height="30">
+              <use href="./svg/icons.svg#icon-link"></use>
+            </svg>
           </div>
-          <div class="services-block__move-on"></div>
         </article>
         <article class="services-block">
           <div class="services-block__title">
             <p>Турниры</p>
+            <div class="services-block__descriptions">
+              <h2>Расписание</h2>
+            </div>
           </div>
-          <div class="services-block__descriptions">
-            <h2>Расписание</h2>
+          <div class="services-block__icon-link">
+            <svg width="30" height="30">
+              <use href="./svg/icons.svg#icon-link"></use>
+            </svg>
           </div>
-          <div class="services-block__move-on"></div>
         </article>
       </section>
       <!-- ! НЕ ЗНАЮ КАК РАБОТАТЬ С ИЗОБРАЖЕНИЯМИ -->
@@ -153,8 +187,16 @@
         <div class="coaching-staff__title">
           <h2>Тренерский состав</h2>
         </div>
-        <div class="coaching-staff__slider-left"></div>
-        <div class="coaching-staff__slider-right"></div>
+        <div class="coaching-staff__slider-left">
+          <svg width="30" height="30">
+            <use href="./svg/icons.svg#icon-arrow-left"></use>
+          </svg>
+        </div>
+        <div class="coaching-staff__slider-right">
+          <svg width="30" height="30">
+            <use href="./svg/icons.svg#arrow-right"></use>
+          </svg>
+        </div>
         <div class="coaching-staff-list">
           <article class="coach">
             <div class="coach__img">
@@ -239,16 +281,36 @@
             <h2>Цены и абонементы</h2>
           </div>
           <div class="prices-subscriptions__button">
-            <button type="button">Зимний сезон 2021-2022</button>
+            <button class="prices-subscriptions__style" type="button">
+              Зимний сезон 2021-2022
+              <svg width="30" height="30">
+                <use href="./svg/icons.svg#icon-arrow-left"></use>
+              </svg>
+            </button>
           </div>
           <div class="prices-subscriptions__button">
-            <button type="button">Абонементы</button>
+            <button class="prices-subscriptions__style" type="button">
+              Абонементы
+              <svg width="30" height="30">
+                <use href="./svg/icons.svg#icon-arrow-left"></use>
+              </svg>
+            </button>
           </div>
           <div class="prices-subscriptions__button">
-            <button type="button">Скидки</button>
+            <button class="prices-subscriptions__style" type="button">
+              Скидки
+              <svg width="30" height="30">
+                <use href="./svg/icons.svg#icon-arrow-left"></use>
+              </svg>
+            </button>
           </div>
           <div class="prices-subscriptions__button">
-            <button type="button">Дополнительные услуги</button>
+            <button class="prices-subscriptions__style" type="button">
+              Дополнительные услуги
+              <svg width="30" height="30">
+                <use href="./svg/icons.svg#icon-arrow-left"></use>
+              </svg>
+            </button>
           </div>
         </div>
         <div class="services">
@@ -256,8 +318,16 @@
             <h2>Услуги</h2>
           </div>
           <div class="services__slider">
-            <div class="services__slider-left"></div>
-            <div class="services__slider-right"></div>
+            <div class="services__slider-left">
+              <svg width="30" height="30">
+                <use href="./svg/icons.svg#icon-arrow-left"></use>
+              </svg>
+            </div>
+            <div class="services__slider-right">
+              <svg width="30" height="30">
+                <use href="./svg/icons.svg#icon-arrow-right"></use>
+              </svg>
+            </div>
             <div class="services__img">
               <img src="./images/cafe.jpeg" alt="" />
             </div>
@@ -267,8 +337,8 @@
     </main>
     <footer class="footer">
       <div class="footer__rights">
-				<p>2022 &#169; Все права защищены.</p>
-			</div>
+        <p>2022 &#169; Все права защищены.</p>
+      </div>
       <div class="list">
         <ul class="list__ul">
           <li class="list__list-selection">Главная</li>
@@ -282,9 +352,21 @@
         </ul>
       </div>
       <div class="social-media">
-        <div class="social-media__youtube-icon youtube-icon"></div>
-        <div class="social-media__vc-icon vc-icon"></div>
-        <div class="social-media__telegram-icon telegram-icon"></div>
+        <div class="social-media__youtube-icon youtube-icon">
+          <svg width="36" height="36">
+            <use href="./svg/icons.svg#icon-youtube-pink"></use>
+          </svg>
+        </div>
+        <div class="social-media__vc-icon vc-icon">
+          <svg width="36" height="36">
+            <use href="./svg/icons.svg#icon-vk-pink"></use>
+          </svg>
+        </div>
+        <div class="social-media__telegram-icon telegram-icon">
+          <svg width="40" height="40">
+            <use href="./svg/icons.svg#icon-telegram-pink"></use>
+          </svg>
+        </div>
       </div>
     </footer>
   </body>

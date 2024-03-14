@@ -1,0 +1,12 @@
+@import "normalize";
+@import "fonts";
+@import "header";
+@import "club-address";
+@import "variables";
+@import "services";
+body {
+  background-image: url(../images/Backgorud.jpeg);
+  background-repeat: no-repeat;
+  background-position: center top;
+	background-size: cover;
+}
